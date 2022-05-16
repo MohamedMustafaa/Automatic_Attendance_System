@@ -1,0 +1,87 @@
+<!Doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="student_page_css.css">
+    <title>ACU Attendance System</title>
+
+
+</head>
+
+<body>
+
+
+    <div class="logo">
+        <a href="#"><img src="ACU_logo.png"></a>
+
+        <nav>
+            <ul>
+
+                <li><a href="">Contact us</a></li>
+        </nav>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="loginbox">
+        <img src="student_logo.png" class="avatar">
+
+        <h1>Submit Here</h1>
+        <form action="student_page_php.php" method="post">
+            <p>Name</p>
+            <div><input type="text" placeholder="name" name="name" required></div>
+
+            <p>Id</p>
+            <div><input type="password" placeholder="id" name="id" required></div>
+            <select class="select" type="text" name="fullName" required>
+                <option value="">Select Course Name</option>
+                <option value="image">Image Processing</option>
+                <option value="advanced">Advanced Databases</option>
+                <option value="pattern">Pattern Recognition</option>
+                <option value="security">Security</option>
+              </select>
+
+            <div><button type="submit">Submit</button></div>
+        </form>
+    </div>
+
+    <script>
+        var stateObj = {
+            foo: "bar"
+        };
+        history.pushState(stateObj, "page without extension", "XYZ");
+    </script>
+
+
+
+</body>
+
+</html>

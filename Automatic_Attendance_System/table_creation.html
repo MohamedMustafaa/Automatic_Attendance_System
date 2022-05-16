@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="table_creation_css.CSS">
+    <title>ACU Attendance System</title>
+</head>
+
+<body>
+
+    <div class="logo">
+        <a href="#"><img src="ACU_logo.png" class="logo"></a>
+
+        <nav>
+            <ul>
+                <li><a href="teacher_login.html">Logout</a></li>
+                <li><a href="">Contact us</a></li>
+        </nav>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="loginbox">
+        <img src="teacher_logo.jfif" class="avatar">
+
+
+
+        <form action="table_creation_php.php" method="POST">
+
+
+
+            <h2 for="fullName">Chosee your Course</h2>
+
+            <select class="select" type="text" name="fullName" required>
+              <option value="">Select Course Name</option>
+              <option value="image">Image Processing</option>
+              <option value="advanced">Advanced Databases</option>
+              <option value="pattern">Pattern Recognition</option>
+              <option value="security">Security</option>
+            </select>
+
+            <button class="qr-btn" type="submit">Generate</button>
+            <a href="qr_code_page.html">Click her if you already created a table</a>
+
+
+
+
+
+        </form>
+        <div class="qr-img"><img src=""></div>
+
+        <div id="code" class="code"></div>
+
+    </div>
+
+
+    <script src="qrcode.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

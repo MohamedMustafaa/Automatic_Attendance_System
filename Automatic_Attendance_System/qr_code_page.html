@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="qr_code_page_css.css">
+    <title>ACU Attendance System</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="logo">
+        <a href="#"> <img src="ACU_logo.png"></a>
+
+        <nav>
+            <ul>
+
+
+
+                <li><a href="table_creation.html">GO Back</a></li>
+
+
+                <li><a href="teacher_login.html">Logout</a></li>
+
+                <li><a href="">Contact us</a></li>
+
+        </nav>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="loginbox">
+        <img src="teacher_logo.jfif" class="avatar">
+        <h1 id="qr-result">Generate QR-code for your Course here</h1>
+
+        <form id="generator">
+            <!-- Full Name -->
+            <select class="select" type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+              <option value="">Select Course Name</option>
+              <option value="Image">Image Processing</option>
+              <option value="Advanced">Advanced Databases</option>
+              <option value="Pattern">Pattern Recognition</option>
+              <option value="Security">Security</option>
+            </select>
+            <button type="submit">Generate</button>
+
+
+        </form>
+
+        <div id="code" class="code"></div>
+        <form action="qrcode_page_export_php.php" method="POST" target="blank">
+            <h2 style="text-align: center;">Download and show attendance report here</h2>
+            <select class="select" type="text" name="fullName" required>
+                <option value="">Select Course Name</option>
+                <option value="image">Image Processing</option>
+                <option value="advanced">Advanced Databases</option>
+                <option value="pattern">Pattern Recognition</option>
+                <option value="security">Security</option>
+              </select>
+            <button class="button">Show Attendance</button>
+        </form>
+
+
+
+
+
+
+        <form method="post" action="qrcode_page_delete_php.php">
+            <select class="select" type="text" name="fullName" required>
+                <option value="">Select Course Name</option>
+                <option value="image">Image Processing</option>
+                <option value="advanced">Advanced Databases</option>
+                <option value="pattern">Pattern Recognition</option>
+                <option value="security">Security</option>
+              </select>
+            <button type="submit" class="btn btn-success">Delete Table</button>
+        </form>
+        <div class="buttontot">
+            <form action="insert into tables.php" method="POST">
+                <button class="buttontot" type="submit">Add To Total Attendance</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script>
+        alert("DELETE the Table before You Leave");
+    </script>
+    <script src="qrcode_page_1_js.js"></script>
+    <script src="qrcode_page_2_js.js"></script>
+    <script src="qrcode_page_session_js.js"></script>
+
+</body>
+
+</html>
